@@ -1,1 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-align {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .button-element {
+        a {
+            color: white;
+        }
+    }
+}
