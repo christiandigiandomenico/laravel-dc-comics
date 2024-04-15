@@ -7,7 +7,7 @@
 
     {{-- @dd($pasta) --}}
 
-    <form action="{{route('comic.update', comic->id)}}" method="POST">
+    <form action="{{route('comics.update', $comic->id)}}" method="POST">
         @csrf
         @method('PUT')
 

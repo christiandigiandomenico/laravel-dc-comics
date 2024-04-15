@@ -65,7 +65,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view('comic.edit', compact('pasta'));
+        return view('comic.edit', compact('comic'));
     }
 
     /**

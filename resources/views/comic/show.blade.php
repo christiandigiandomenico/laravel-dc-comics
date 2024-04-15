@@ -11,7 +11,7 @@
         <img src="{{$comic->thumb}}" alt="">
 
         <div class="py-5">
-            <a href="{{route('comic.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
 
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Elimina
@@ -43,7 +43,7 @@
             <div class="modal-footer">
 
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                <form action="{{route('comic.destroy', $comic->id)}}" method="POST">
+                <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                     @csrf
                     @method("DELETE")
                     
